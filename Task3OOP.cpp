@@ -4,12 +4,12 @@
 #include "pch.h"
 #include <iostream>
 using namespace std;
-class Matrix {
+class  TransporationofMatrix{
 private:
 	int** matrixA,**transporatedMatrixA;
 	
 public:
-	Matrix (int length, int windth)
+	TransporationofMatrix(int length, int windth)
 	{
 		matrixA = new int*[length];
 		int i, j;
@@ -34,7 +34,7 @@ bool isRectangle(int length, int windth) {
 		return 0;
 }
 
-void Matrix::transporation(int length, int windth)
+void TransporationofMatrix::transporation(int length, int windth)
 {
 	int i, j;
 		transporatedMatrixA = new int*[length];
@@ -47,7 +47,7 @@ void Matrix::transporation(int length, int windth)
 
 	
 
-void Matrix::Get_matrix(int length, int windth)
+void TransporationofMatrix::Get_matrix(int length, int windth)
 {
 	cout << "transporated matrix:" << endl;
 	for (int i = 0; i < length; i++) {
@@ -57,7 +57,7 @@ void Matrix::Get_matrix(int length, int windth)
 		cout << endl;
 	}
 }
-void Matrix::popMatrix(int length, int windth)
+void TransporationofMatrix::popMatrix(int length, int windth)
 {
 	int i;
 	for (i = 0; i < length; i++)
@@ -77,7 +77,7 @@ int main()
 	cin >> length;
 	cout << "Enter a number of columns" << endl;
 	cin >> windth;
-	Matrix Transporation(length, windth);
+	TransporationofMatrix Transporation(length, windth);
 	if (isRectangle(length, windth))
 	{
 		Transporation.transporation(length, windth);
