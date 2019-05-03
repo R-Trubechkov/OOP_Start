@@ -63,6 +63,7 @@ void InformationaboutUser::SaveInfoinUserFile()
 {
 	
 	userfile = user_ID + ".txt";
+	ofstream f(userfile);
 	fstream fs;
 	fs.open(userfile, fstream::out | fstream::app);
 	if (!fs.is_open())
@@ -120,7 +121,7 @@ void inputDatafromSightFile(Sight*sightarr, int numberofsights)
 {
 	fstream fs;
 	string logfile = "SightFileCoordinates.txt";
-	fs.open(logfile, fstream::in | fstream::app);
+	fs.open(logfile, fstream::in);
 	if (!fs.is_open())
 		cout << "Taking data failed" << endl;
 	else
@@ -141,7 +142,7 @@ void inputDatafromSightFile(Sight*sightarr, int numberofsights)
 	}
 	fs.close();
 	logfile = "SightFileNames.txt";
-	fs.open(logfile, fstream::in | fstream::app);
+	fs.open(logfile, fstream::in );
 	if (!fs.is_open())
 		cout << "Taking data failed" << endl;
 	else
