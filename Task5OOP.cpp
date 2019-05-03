@@ -64,36 +64,7 @@ void InformationaboutUser::SaveInfoinUserFile()
 class Sight
 {
 private:
-	/*class Dot {
-	private:
-
-	public:
-		Dot()
-		{
-			latitude = rand() % 240 + 60;
-			srand(time(NULL));
-			longitude = rand() % 245 + 65;
-		}
-
-		int Get_coordinatelatitude()
-		{
-			return latitude;
-		}
-		int Get_coordinatelongitude()
-		{
-			return longitude;
-		}
-
-		int Set_coordinatelatitude(int x)
-		{
-			latitude = x;
-		}
-		int Set_coordinatelongitude(int y)
-		{
-			longitude = y;
-		}
-
-	};*/
+	
 	int latitudeA, longitudeA, latitudeB, longitudeB;
 	string nameOfthePlace;
 public:
